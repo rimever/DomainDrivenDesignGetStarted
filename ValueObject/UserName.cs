@@ -4,18 +4,18 @@ namespace ValueObject
 {
     public class UserName
     {
-        private string _name;
+        public string Value { private set; get; }
 
         public UserName(string value)
         {
             ChangeName(value);
         }
 
-        private void ChangeName(string value)
+        public void ChangeName(string value)
         {
             if (value == null) throw new ArgumentNullException(nameof(value));
             if (value.Length < 3) throw new ArgumentException("ユーザー名は3文字以上です。", nameof(value));
-            this._name = value;
+            this.Value = value;
         }
     }
 }

@@ -2,11 +2,11 @@ using System;
 
 namespace ValueObject
 {
-    public class UserId
+    public class UserMailAddress
     {
         public readonly string Value;
 
-        public UserId(string value)
+        public UserMailAddress(string value)
         {
             if (value == null) throw new ArgumentNullException(nameof(value));
             this.Value = value;

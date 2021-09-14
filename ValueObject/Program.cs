@@ -7,7 +7,7 @@ namespace ValueObject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new ModelNumber("pc","777","1"));
+            Console.WriteLine(new ModelNumber("pc", "777", "1"));
             Check(null, "test");
             Check("test", null);
             Check("@John", "Smith");
@@ -21,6 +21,11 @@ namespace ValueObject
             Console.WriteLine(
                 new FullName(new Name("john"), new Name("smith")).Equals(new FullName(new Name("john"),
                     new Name("scott"))));
+
+            var user = new User(new UserId("id"), new UserName("naruse"), new UserMailAddress("test@t.com"));
+            var userService = new UserService(new UserRepository());
+            var duplicatedResult = userService.Exists(user);
+            Console.WriteLine($"duplicatedResult={duplicatedResult}");
 
             var myMoney = new Money(1000, "JPY");
             var allowance = new Money(3000, "JPY");
