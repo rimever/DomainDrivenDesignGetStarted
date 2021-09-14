@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 
 namespace ValueObject
 {
@@ -6,9 +7,37 @@ namespace ValueObject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new FullName("john","smith").Equals(new FullName("john","smith")));
-            Console.WriteLine(new FullName("john","smith").Equals(new FullName("thomas","smith")));
-            Console.WriteLine(new FullName("john","smith").Equals(new FullName("john","scott")));
+            Console.WriteLine(new ModelNumber("pc","777","1"));
+            Check(null, "test");
+            Check("test", null);
+            Check("@John", "Smith");
+            Check("John", "@Smith");
+            Console.WriteLine(
+                new FullName(new Name("john"), new Name("smith")).Equals(new FullName(new Name("john"),
+                    new Name("smith"))));
+            Console.WriteLine(
+                new FullName(new Name("john"), new Name("smith")).Equals(new FullName(new Name("thomas"),
+                    new Name("smith"))));
+            Console.WriteLine(
+                new FullName(new Name("john"), new Name("smith")).Equals(new FullName(new Name("john"),
+                    new Name("scott"))));
+
+            var myMoney = new Money(1000, "JPY");
+            var allowance = new Money(3000, "JPY");
+            var result = myMoney.Add(allowance);
+        }
+
+        private static void Check(string firstName, string lastName)
+        {
+            try
+            {
+                var fullName = new FullName(new Name(firstName), new Name(lastName));
+                Console.WriteLine("OK!");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

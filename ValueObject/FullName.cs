@@ -4,15 +4,17 @@ namespace ValueObject
 {
     public class FullName : IEquatable<FullName>
     {
-        public FullName(string firstName, string lastName)
+        public FullName(Name firstName, Name lastName)
         {
+            if (firstName == null) throw new ArgumentNullException();
+            if (lastName == null) throw new ArgumentNullException();
             FirstName = firstName;
             LastName = lastName;
         }
 
-        public string LastName { get; set; }
+        public Name LastName { get; set; }
 
-        public string FirstName { get; set; }
+        public Name FirstName { get; set; }
 
 
         public bool Equals(FullName other)

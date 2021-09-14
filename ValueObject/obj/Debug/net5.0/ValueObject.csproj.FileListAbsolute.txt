@@ -1,0 +1,15 @@
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/bin/Debug/net5.0/ValueObject.deps.json
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/bin/Debug/net5.0/ValueObject.runtimeconfig.json
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/bin/Debug/net5.0/ValueObject.runtimeconfig.dev.json
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/bin/Debug/net5.0/ValueObject.dll
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/bin/Debug/net5.0/ref/ValueObject.dll
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/bin/Debug/net5.0/ValueObject.pdb
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.csprojAssemblyReference.cache
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.AssemblyInfoInputs.cache
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.AssemblyInfo.cs
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.csproj.CoreCompileInputs.cache
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.dll
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ref/ValueObject.dll
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.pdb
+/Users/rim/DomainDrivenDesignGetStarted/ValueObject/obj/Debug/net5.0/ValueObject.genruntimeconfig.cache
