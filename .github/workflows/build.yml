@@ -1,7 +1,11 @@
-
-steps:
-- uses: actions/checkout@v2
-- uses: actions/setup-dotnet@v1
-  with:
-    dotnet-version: '5.0.x' # SDK Version to use; x will use the latest version of the 5.0 channel
-- run: dotnet build ValueObject/ValueObject.csproj
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+        dotnet-version: '5.0.x' # SDK Version to use; x will use the latest version of the 5.0 channel
+      - run: dotnet build ValueObject/ValueObject.csproj
